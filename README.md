@@ -1,6 +1,6 @@
 # Sunrays Theme
 
-A modern Apache2 index theme.
+A modern Apache2 index theme by [lachezarov](http://lachezarov.com).
 
 ![Sunrays Light](http://i63.tinypic.com/dctoxd.png)
 
