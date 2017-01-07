@@ -1,6 +1,6 @@
 <?php 
 /*
- * Sunrays Theme v0.9 (http://lachezarov.com)
+ * Sunrays Theme v1.0 (http://lachezarov.com)
  * Licensed under the MIT license
  */
 
