@@ -1,0 +1,10 @@
+<svg width="26px" height="26px" viewBox="266 253 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="rss" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(266.000000, 253.000000)">
+        <rect fill="#F29851" x="0" y="0" width="26" height="26"></rect>
+        <g transform="translate(5.000000, 3.000000)">
+            <ellipse fill="#FFFFFF" cx="2.42857143" cy="15.6" rx="1.71428571" ry="1.7"></ellipse>
+            <path d="M1.1705205,13.2704246 C1.1705205,13.2704246 2.10664323,9.89939153 6.28584563,9.89939153 C10.465048,9.89939153 11.4806924,13.3726312 11.4806924,13.3726312" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" transform="translate(6.325606, 11.636011) rotate(41.000000) translate(-6.325606, -11.636011) "></path>
+            <path d="M1.13223854,10.6896789 C1.13223854,10.6896789 3.06119996,5.50307588 10.0026222,5.50307588 C16.9440444,5.50307588 18.6350022,10.6896789 18.6350022,10.6896789" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" transform="translate(9.883620, 8.096377) rotate(45.000000) translate(-9.883620, -8.096377) "></path>
+        </g>
+    </g>
+</svg>

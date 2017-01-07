@@ -1,0 +1,21 @@
+<svg width="26px" height="26px" viewBox="300 117 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(300.000000, 117.000000)">
+        <rect fill="#C67E21" x="0" y="0" width="26" height="26"></rect>
+        <rect fill="#FFFFFF" x="17" y="0" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="2" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="4" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="6" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="8" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="10" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="17" y="12" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="11" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="9" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="7" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="5" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="3" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="1" width="1" height="1"></rect>
+        <rect fill="#FFFFFF" x="16" y="13" width="1" height="1"></rect>
+        <path d="M16,15 L16,21 L18,21 L18,15 L16,15 Z M19,14 L19,22 L15,22 L15,14 L19,14 Z" fill="#FFFFFF"></path>
+        <rect fill="#FFFFFF" x="16" y="18" width="2" height="2"></rect>
+    </g>
+</svg>

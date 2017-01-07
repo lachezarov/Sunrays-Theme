@@ -1,0 +1,43 @@
+IndexIgnore .htaccess /theme /sunrays-theme /internal /.drone-wp-tools /drone /.svn /.git
+
+Options +Indexes +FollowSymLinks
+
+AddType text/html .php
+Addhandler application/x-httpd-php .php
+
+IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +HTMLTable +SuppressRules +SuppressDescription -IconsAreLinks +IconWidth=26 +IconHeight=26 +SuppressHTMLPreamble +VersionSort +Type=text/xml +XHTML +NameWidth=*
+
+HeaderName /sunrays-theme/header.php
+
+
+AddIcon /sunrays-theme/icons/file.svg ^^BLANKICON^^
+AddIcon /sunrays-theme/icons/folder.svg ^^DIRECTORY^^
+AddIcon /sunrays-theme/icons/parent.svg ..
+
+AddIcon /sunrays-theme/icons/archive.svg .zip .rar .tar .gz .gzip
+AddIcon /sunrays-theme/icons/audio.svg .aif .iff .m3u .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg
+AddIcon /sunrays-theme/icons/bin.svg .bin .c .deb .jar .rb .rpm
+AddIcon /sunrays-theme/icons/xls.svg .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+AddIcon /sunrays-theme/icons/css.svg .css
+AddIcon /sunrays-theme/icons/doc.svg .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+AddIcon /sunrays-theme/icons/image.svg .svg
+AddIcon /sunrays-theme/icons/ai.svg .ai .eps
+AddIcon /sunrays-theme/icons/image.svg .gif
+AddIcon /sunrays-theme/icons/html.svg .html .xhtml .shtml .htm
+AddIcon /sunrays-theme/icons/image.svg .ico
+AddIcon /sunrays-theme/icons/jpg.svg .jpg .jpeg .JPG .JPEG
+AddIcon /sunrays-theme/icons/js.svg .js .json
+AddIcon /sunrays-theme/icons/txt.svg .md
+AddIcon /sunrays-theme/icons/dmg.svg .pkg .dmg .iso
+AddIcon /sunrays-theme/icons/pdf.svg .pdf
+AddIcon /sunrays-theme/icons/php.svg .php .phtml
+AddIcon /sunrays-theme/icons/png.svg .png
+AddIcon /sunrays-theme/icons/psd.svg .ps .psd
+AddIcon /sunrays-theme/icons/rss.svg .rss
+AddIcon /sunrays-theme/icons/sql.svg .sql
+AddIcon /sunrays-theme/icons/image.svg .tiff
+AddIcon /sunrays-theme/icons/txt.svg .txt .nfo
+AddIcon /sunrays-theme/icons/video.svg .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+AddIcon /sunrays-theme/icons/xml.svg .xml .xsl
+
+DefaultIcon /sunrays-theme/icons/file.svg

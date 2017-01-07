@@ -1,0 +1,7 @@
+<svg width="26px" height="26px" viewBox="198 253 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(198.000000, 253.000000)">
+        <rect fill="#54647B" x="0" y="0" width="26" height="26"></rect>
+        <path d="M6,6 L6,20 L20,20 L20,6 L6,6 Z M21,5 L21,21 L5,21 L5,5 L21,5 Z" fill="#FFFFFF"></path>
+        <path d="M15,13 L12,10.5 L12,15.5 L15,13 Z M15.6401844,13.7682213 L12.6401844,16.2682213 L11,17.6350416 L11,15.5 L11,10.5 L11,8.36495839 L12.6401844,9.73177872 L15.6401844,12.2317787 L16.5620499,13 L15.6401844,13.7682213 Z" fill="#FFFFFF"></path>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+	"theme" : "default",
+	"autoDrillDown" : "true",
+	"search" : {
+		"enabled" : "true",
+		"ignore" : [
+			"node_modules",
+			".bowerrc",
+			".git",
+			".svn",
+			"sunrays-theme"
+		]
+	}
+}

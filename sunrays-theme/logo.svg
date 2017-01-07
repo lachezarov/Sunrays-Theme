@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1298px" height="1291px" viewBox="0 0 1298 1291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="100%" id="radialGradient-1">
+            <stop stop-color="#FF8C00" offset="0%"></stop>
+            <stop stop-color="#FF0000" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(-26.000000, -29.000000)">
+            <g transform="translate(76.000000, 79.000000)">
+                <circle id="Oval" stroke="#000000" stroke-width="99" cx="352.334152" cy="838.820639" r="352.334152"></circle>
+                <circle id="Oval-3" fill="#FFFFFF" cx="352.334152" cy="844.717445" r="228.501229"></circle>
+                <polyline id="Line" stroke="#000000" stroke-width="99" stroke-linecap="round" stroke-linejoin="round" points="350.859951 0 350.859951 723.236562 350.859951 840.29484 459.976615 840.29484 1197.95323 840.29484"></polyline>
+                <path d="M399.280098,841.769042 C399.280098,817.46987 379.581727,797.771499 355.282555,797.771499 C330.983383,797.771499 311.285012,817.46987 311.285012,841.769042 C311.285012,866.068214 330.983383,885.766585 355.282555,885.766585 C379.581727,885.766585 399.280098,866.068214 399.280098,841.769042 Z M212.285012,841.769042 C212.285012,762.79368 276.307193,698.771499 355.282555,698.771499 C434.257918,698.771499 498.280098,762.79368 498.280098,841.769042 C498.280098,920.744404 434.257918,984.766585 355.282555,984.766585 C276.307193,984.766585 212.285012,920.744404 212.285012,841.769042 Z" id="Oval-2" fill="url(#radialGradient-1)"></path>
+                <path d="M607.803901,577.454085 L1000.316,184.941981" id="Line" stroke="#000000" stroke-width="99" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
