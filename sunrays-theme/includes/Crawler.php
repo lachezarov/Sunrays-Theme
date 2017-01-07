@@ -1,4 +1,8 @@
 <?php 
+/*
+ * Sunrays Theme v0.9 (http://lachezarov.com)
+ * Licensed under the MIT license
+ */
 
 require_once('SafetyNet.php');
 

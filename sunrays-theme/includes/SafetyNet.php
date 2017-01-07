@@ -1,4 +1,8 @@
 <?php 
+/*
+ * Sunrays Theme v0.9 (http://lachezarov.com)
+ * Licensed under the MIT license
+ */
 
 $config = file_get_contents(realpath(dirname(__FILE__) . '/..') . '/config.json');
 $config = json_decode($config, true);

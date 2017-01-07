@@ -1,3 +1,8 @@
+/*
+ * Sunrays Theme v0.9 (http://lachezarov.com)
+ * Licensed under the MIT license
+ */
+
 (function(win, doc) {
 	var body = doc.body;
 
@@ -317,7 +322,7 @@
 
 						focused = doc.querySelector('.focused');
 					}
-					
+
 					if( focused.classList.contains('result') ) {
 						location = focused.href;
 					} else if ( autoDrillDown ) {
