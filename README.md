@@ -8,6 +8,7 @@ A modern Apache2 index theme.
 
  - Custom rendered HTML5 DOM tree using XSL transformation.
  - Responsive - suitable for all device sizes.
+ - Custom vector icons - looks crisp on any pixel density.
  - **autoDrillDown** automatically opens single sub-directories until multiple choice is available.
  - **quickSearch** - just start typing. Combined with **autoDrillDown** this feature saves a lot of clicks and time.
  - Light and Dark color schemes available
