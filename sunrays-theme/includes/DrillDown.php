@@ -17,7 +17,7 @@ if( isset( $_GET['start'] ) && !empty( $_GET['start'] ) ) {
 function drillDown($start) {
 	global $server_root;
 
-	$subs = array_filter(glob($start . '*'), 'is_dir');
+	$subs = glob($start . '*');
 
 	$subs = array_values($subs);
 
