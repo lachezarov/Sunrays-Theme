@@ -177,17 +177,23 @@
 			if( currentResult === null ) {
 				currentResult = results[0];
 
-				currentResult.classList.add('focused');
+				if( currentResult.length ) {
+					currentResult.classList.add('focused');
+				}
 			} else {
 				var nextResult = currentResult.nextSibling;
 
-				currentResult.classList.remove('focused');
+				if( nextResult.length ) {
+					currentResult.classList.remove('focused');
+				}
 
 				if( nextResult === null || 'classList' in nextResult === false ) {
 					nextResult = results[0];
 				}
 
-				nextResult.classList.add('focused');
+				if( nextResult.length ) {
+					nextResult.classList.add('focused');
+				}
 			}
 
 			this.scrollToFocusedResult();
@@ -211,17 +217,23 @@
 			if( currentResult === null ) {
 				currentResult = results[results.length - 1];
 
-				currentResult.classList.add('focused');
+				if( currentResult.length ) {
+					currentResult.classList.add('focused');
+				}
 			} else {
 				var prevResult = doc.querySelector('.focused').previousSibling;
 
-				currentResult.classList.remove('focused');
+				if( currentResult.length ) {
+					currentResult.classList.remove('focused');
+				}
 
 				if( prevResult === null || 'classList' in prevResult === false ) {
 					prevResult = results[results.length - 1];
 				}
 
-				prevResult.classList.add('focused');
+				if( prevResult.length ) {
+					prevResult.classList.add('focused');
+				}
 			}
 
 			this.scrollToFocusedResult();
@@ -259,7 +271,7 @@
 		win.addEventListener('mousemove', function(event) {
 			var focused = doc.querySelector('.focused');
 
-			if( focused !== null ) {
+			if( focused !== null && focused.length ) {
 				focused.classList.remove('focused');
 			}
 		});
@@ -267,7 +279,7 @@
 		this.resultsContainer.addEventListener('touchstart', function(event) {
 			var focused = this.querySelector('.focused');
 
-			if( focused !== null ) {
+			if( focused !== null && focused.length ) {
 				focused.classList.remove('focused');
 			}
 		});
