@@ -432,7 +432,7 @@
 		}
 	});
 
-	addEventListener('touchstart', function(event) {
+	addEventListener('touchend', function(event) {
 		var target = event.target;
 
 		if( doc.querySelectorAll('.nav-sort.open').length && !target.classList.contains('nav-trigger') ) {
