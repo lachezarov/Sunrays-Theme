@@ -177,23 +177,17 @@
 			if( currentResult === null ) {
 				currentResult = results[0];
 
-				if( currentResult.length ) {
-					currentResult.classList.add('focused');
-				}
+				currentResult.classList.add('focused');
 			} else {
 				var nextResult = currentResult.nextSibling;
 
-				if( nextResult.length ) {
-					currentResult.classList.remove('focused');
-				}
+				currentResult.classList.remove('focused');
 
 				if( nextResult === null || 'classList' in nextResult === false ) {
 					nextResult = results[0];
 				}
 
-				if( nextResult.length ) {
-					nextResult.classList.add('focused');
-				}
+				nextResult.classList.add('focused');
 			}
 
 			this.scrollToFocusedResult();
@@ -217,23 +211,17 @@
 			if( currentResult === null ) {
 				currentResult = results[results.length - 1];
 
-				if( currentResult.length ) {
-					currentResult.classList.add('focused');
-				}
+				currentResult.classList.add('focused');
 			} else {
 				var prevResult = doc.querySelector('.focused').previousSibling;
 
-				if( currentResult.length ) {
-					currentResult.classList.remove('focused');
-				}
+				currentResult.classList.remove('focused');
 
 				if( prevResult === null || 'classList' in prevResult === false ) {
 					prevResult = results[results.length - 1];
 				}
 
-				if( prevResult.length ) {
-					prevResult.classList.add('focused');
-				}
+				prevResult.classList.add('focused');
 			}
 
 			this.scrollToFocusedResult();
@@ -386,14 +374,22 @@
 		searchField.addEventListener('focus', function(event) {
 			body.classList.add('searching');
 
-			doc.querySelector('.focused').classList.remove('focused');
+			var focused = doc.querySelector('.focused');
+
+			if( focused !== null ) {
+				focused.classList.remove('focused');
+			}
 		});
 
 		searchField.addEventListener('blur', function(event) {
 			setTimeout(function() {
 				body.classList.remove('searching');
 
-				doc.querySelector('.focused').classList.remove('focused');
+				var focused = doc.querySelector('.focused');
+
+				if( focused !== null ) {
+					focused.classList.remove('focused');
+				}
 			}, 50);
 		});
 	}
