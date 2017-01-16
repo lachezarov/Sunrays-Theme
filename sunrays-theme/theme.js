@@ -390,7 +390,7 @@
 				if( focused !== null ) {
 					focused.classList.remove('focused');
 				}
-			}, 50);
+			}, 500);
 		});
 	}
 
