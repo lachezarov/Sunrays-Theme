@@ -53,6 +53,7 @@ a { color: #333; text-decoration: none; }
 .items { margin: 50px 0 30px; background: rgba(255,255,255,.4); position: relative; z-index: 2; }
 
 .item { background: rgba(255,255,255,.55); position: relative; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; padding: 4px 4px 4px 40px; align-items: center; -webkit-user-select: none; user-select: none; min-height: 40px; }
+.item:before { content: ''; width: 20px; height: 20px; position: absolute; top: 10px; left: 8px; background-image: url(icons/file.svg); background-position: 50%; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain; }
 .item + .item { margin-top: 1px; }
 
 .no-flex .item { display: block; }
@@ -68,9 +69,6 @@ a { color: #333; text-decoration: none; }
 .no-touch .item:hover .item-size,
 .item:focus .item-size,
 .item.focused .item-size { background: #ff5800; }
-
-.item-icon { width: 36px; height: 36px; position: absolute; top: 2px; left: 0; }
-.item-icon img { max-width: 20px; max-height: 20px; position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
 .item-name { line-height: 1.6; font-weight: 600; width: calc(100% - 44px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
@@ -105,6 +103,130 @@ a { color: #333; text-decoration: none; }
 .loading:before { content: ''; background: #ff5800; height: 2px; position: absolute; bottom: 0; animation: loading 2s ease infinite; }
 .loading:after { content: 'Loading Directory Tree...'; position: absolute; top: 10px; left: 8px; font-size: 10px; cursor: default; user-select: none; font-weight: 500; text-transform: uppercase; }
 
+/* Icons */
+.item[href$="/"]:before { background-image: url(icons/folder.svg); }
+
+.item.parent:before { background-image: url(icons/parent.svg); }
+
+.item[href$=".zip"]:before,
+.item[href$=".rar"]:before,
+.item[href$=".tar"]:before,
+.item[href$=".gz"]:before,
+.item[href$=".gzip"]:before { background-image: url(icons/archive.svg); }
+
+.item[href$=".aif"]:before,
+.item[href$=".iff"]:before,
+.item[href$=".m3u"]:before,
+.item[href$=".m4a"]:before,
+.item[href$=".mid"]:before,
+.item[href$=".mp3"]:before,
+.item[href$=".mpa"]:before,
+.item[href$=".ra"]:before,
+.item[href$=".wav"]:before,
+.item[href$=".wma"]:before,
+.item[href$=".f4a"]:before,
+.item[href$=".f4b"]:before,
+.item[href$=".oga"]:before,
+.item[href$=".ogg"]:before { background-image: url(icons/audio.svg); }
+
+.item[href$=".bin"]:before,
+.item[href$=".c"]:before,
+.item[href$=".deb"]:before,
+.item[href$=".jar"]:before,
+.item[href$=".rb"]:before,
+.item[href$=".rpm"]:before { background-image: url(icons/bin.svg); }
+
+.item[href$=".xlsx"]:before,
+.item[href$=".xlsm"]:before,
+.item[href$=".xltx"]:before,
+.item[href$=".xltm"]:before,
+.item[href$=".xlam"]:before,
+.item[href$=".xlr"]:before,
+.item[href$=".xls"]:before,
+.item[href$=".csv"]:before { background-image: url(icons/xls.svg); }
+
+.item[href$=".css"]:before { background-image: url(icons/css.svg); }
+
+.item[href$=".doc"]:before,
+.item[href$=".docx"]:before,
+.item[href$=".docm"]:before,
+.item[href$=".dot"]:before,
+.item[href$=".dotx"]:before,
+.item[href$=".dotm"]:before,
+.item[href$=".log"]:before,
+.item[href$=".msg"]:before,
+.item[href$=".odt"]:before,
+.item[href$=".pages"]:before,
+.item[href$=".rtf"]:before,
+.item[href$=".tex"]:before,
+.item[href$=".wpd"]:before,
+.item[href$=".wps"]:before { background-image: url(icons/doc.svg); }
+
+.item[href$=".svg"]:before,
+.item[href$=".ico"]:before,
+.item[href$=".gif"]:before,
+.item[href$=".tiff"]:before { background-image: url(icons/image.svg); }
+
+.item[href$=".ai"]:before,
+.item[href$=".eps"]:before { background-image: url(images/ai.svg); }
+
+.item[href$=".html"]:before,
+.item[href$=".xhtml"]:before,
+.item[href$=".shtml"]:before,
+.item[href$=".htm"]:before { background-image: url(icons/html.svg); }
+
+.item[href$=".jpg"]:before,
+.item[href$=".jpeg"]:before,
+.item[href$=".JPG"]:before,
+.item[href$=".JPEG"]:before { background-image: url(icons/jpg.svg); }
+
+.item[href$=".js"]:before,
+.item[href$=".json"]:before { background-image: url(icons/js.svg); }
+
+.item[href$=".md"]:before,
+.item[href$=".txt"]:before,
+.item[href$=".nfo"]:before { background-image: url(icons/txt.svg); }
+
+.item[href$=".pkg"]:before,
+.item[href$=".dmg"]:before,
+.item[href$=".iso"]:before { background-image: url(icons/dmg.svg); }
+
+.item[href$=".pdf"]:before { background-image: url(icons/pdf.svg); }
+
+.item[href$=".php"]:before,
+.item[href$=".phtml"]:before { background-image: url(icons/php.svg); }
+
+.item[href$=".png"]:before { background-image: url(icons/png.svg); }
+
+.item[href$=".ps"]:before,
+.item[href$=".psd"]:before { background-image: url(icons/psd.svg); }
+
+.item[href$=".rss"]:before { background-image: url(icons/rss.svg); }
+
+.item[href$=".sql"]:before { background-image: url(icons/sql.svg); }
+
+.item[href$=".asf"]:before,
+.item[href$=".asx"]:before,
+.item[href$=".avi"]:before,
+.item[href$=".flv"]:before,
+.item[href$=".mkv"]:before,
+.item[href$=".mov"]:before,
+.item[href$=".mp4"]:before,
+.item[href$=".mpg"]:before,
+.item[href$=".rm"]:before,
+.item[href$=".srt"]:before,
+.item[href$=".swf"]:before,
+.item[href$=".vob"]:before,
+.item[href$=".wmv"]:before,
+.item[href$=".m4v"]:before,
+.item[href$=".f4v"]:before,
+.item[href$=".f4p"]:before,
+.item[href$=".ogv"]:before { background-image: url(icons/video.svg); }
+
+.item[href$=".xml"]:before,
+.item[href$=".xsl"]:before { background-image: url(icons/xml.svg); }
+
+
 /* Dark Theme */
 .dark { background: #222; }
 
@@ -137,6 +259,7 @@ a { color: #333; text-decoration: none; }
 /*  Responsive  */
 @media (min-width: 480px) {
 	.item { padding: 0 0 0 40px; min-height: 36px; }
+	.item:before { top: 8px; }
 
 	.item-name { width: 60%; line-height: 2.6; }
 	
@@ -148,8 +271,6 @@ a { color: #333; text-decoration: none; }
 	.no-flex .item-modified { margin-left: 60%; line-height: 36px; padding-right: 10px; }
 
 	.item-size { top: 12px; bottom: auto; }
-
-	.item-icon { top: 0; }
 }
 
 @media (min-width: 768px) {

@@ -9,7 +9,11 @@
 	var mobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|wins ce|xda|xiino|android|playbook|silk/i.test(navigator.userAgent||navigator.vendor||win.opera);
 
 	body.classList.add(mobile ? 'touch' : 'no-touch');
-	body.classList.toggle('no-flex', typeof body.style.flex !== 'undefined');
+	body.classList.toggle('no-flex', typeof body.style.flex === 'undefined');
+
+	var firstItem = doc.querySelector('.item:first-of-type');
+
+	firstItem.classList.toggle('parent', firstItem.querySelector('.item-name').innerHTML.toLowerCase().indexOf('parent') === 0);
 
 	function QuickSearch(options) {
 		this.defaults = {

@@ -58,10 +58,28 @@
 		<ul class="dropdown">
 			<xsl:choose>
 				<xsl:when test="not(string($SortType))">
-					<li class="active ascending"><xsl:copy-of select="th[position()=2]/a" /></li>
+					<li class="active ascending"><xsl:copy-of select="th[position()=1]/a" /></li>
 				</xsl:when>
 
 				<xsl:when test="$SortType = 'N'">
+					<xsl:choose>
+						<xsl:when test="$SortDirection = 'A'">
+							<li class="active ascending"><xsl:copy-of select="th[position()=1]/a" /></li>
+						</xsl:when>
+
+						<xsl:otherwise>
+							<li class="active descending"><xsl:copy-of select="th[position()=1]/a" /></li>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:when>
+
+				<xsl:otherwise>
+					<li><xsl:copy-of select="th[position()=1]/a" /></li>
+				</xsl:otherwise>
+			</xsl:choose>
+
+			<xsl:choose>
+				<xsl:when test="$SortType = 'M'">
 					<xsl:choose>
 						<xsl:when test="$SortDirection = 'A'">
 							<li class="active ascending"><xsl:copy-of select="th[position()=2]/a" /></li>
@@ -79,7 +97,7 @@
 			</xsl:choose>
 
 			<xsl:choose>
-				<xsl:when test="$SortType = 'M'">
+				<xsl:when test="$SortType = 'S'">
 					<xsl:choose>
 						<xsl:when test="$SortDirection = 'A'">
 							<li class="active ascending"><xsl:copy-of select="th[position()=3]/a" /></li>
@@ -95,46 +113,26 @@
 					<li><xsl:copy-of select="th[position()=3]/a" /></li>
 				</xsl:otherwise>
 			</xsl:choose>
-
-			<xsl:choose>
-				<xsl:when test="$SortType = 'S'">
-					<xsl:choose>
-						<xsl:when test="$SortDirection = 'A'">
-							<li class="active ascending"><xsl:copy-of select="th[position()=4]/a" /></li>
-						</xsl:when>
-
-						<xsl:otherwise>
-							<li class="active descending"><xsl:copy-of select="th[position()=4]/a" /></li>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:when>
-
-				<xsl:otherwise>
-					<li><xsl:copy-of select="th[position()=4]/a" /></li>
-				</xsl:otherwise>
-			</xsl:choose>
 		</ul>
 	</xsl:template>
 
 	<xsl:template match="tr[td]">
-		<xsl:variable name="ItemSize" select="td[position()=4]" />
-		<xsl:variable name="ItemModified" select="td[position()=3]" />
-		<xsl:variable name="ItemHref" select="td[position()=2]/a/@href" />
+		<xsl:variable name="ItemSize" select="td[position()=3]" />
+		<xsl:variable name="ItemModified" select="td[position()=2]" />
+		<xsl:variable name="ItemHref" select="td[position()=1]/a/@href" />
 
 		<a class="item">
 			<xsl:attribute name="href">
 				<xsl:value-of select="$ItemHref" />
 			</xsl:attribute>
 
-			<div class="item-icon"><xsl:copy-of select="td[position()=1]/*" /></div>
-
 			<div class="item-name">
-				<xsl:value-of select="td[position()=2]/a" />
+				<xsl:value-of select="td[position()=1]/a" />
 			</div>
 
 			<xsl:choose>
 				<xsl:when test="normalize-space($ItemSize) != '-'">
-					<small class="item-size"><xsl:value-of select="td[position()=4]" /></small>
+					<small class="item-size"><xsl:value-of select="td[position()=3]" /></small>
 				</xsl:when>
 			</xsl:choose>
 			
