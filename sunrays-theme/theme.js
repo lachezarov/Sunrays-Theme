@@ -8,11 +8,7 @@
 
 	var mobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|wins ce|xda|xiino|android|playbook|silk/i.test(navigator.userAgent||navigator.vendor||win.opera);
 
-	if( mobile ) {
-		body.classList.add('touch');
-	} else {
-		body.classList.add('no-touch');
-	}
+	body.classList.toggle('touch', mobile);
 
 	function QuickSearch(options) {
 		this.defaults = {
@@ -36,15 +32,6 @@
 	}
 
 	QuickSearch.prototype.init = function() {
-		this.searchField = doc.createElement('input');
-
-		this.searchField.type = 'search';
-		this.searchField.classList.add('search-field');
-		this.searchField.autocapitalize = 'off';
-		this.searchField.autocomplete = 'off';
-		this.searchField.autocorrect = 'off';
-		this.searchField.spellcheck = false;
-
 		this.container = this.defaults.container;
 
 		this.resultsContainer = doc.createElement('div');
@@ -55,11 +42,26 @@
 
 		this.tree = [];
 
+		if( searchEnabled ) {
+			this.generateSearchField();
+		}
+
 		this.append();
 
 		this.getTree();
 
 		this.bind();
+	}
+
+	QuickSearch.prototype.generateSearchField = function() {
+		this.searchField = doc.createElement('input');
+
+		this.searchField.type = 'search';
+		this.searchField.classList.add('search-field');
+		this.searchField.autocapitalize = 'off';
+		this.searchField.autocomplete = 'off';
+		this.searchField.autocorrect = 'off';
+		this.searchField.spellcheck = false;
 	}
 
 	QuickSearch.prototype.disable = function() {
