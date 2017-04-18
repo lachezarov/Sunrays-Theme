@@ -24,4 +24,21 @@ Place the `/sunrays-theme` directory and the accompanying `.htaccess` file in yo
 
 ### Known Issues
 
-In some instances, if browser-sync script is included at the beginning of the `body` tag, the theme's XML code is broken so it just shows a blank screen.
+> In some instances, if browser-sync script is included at the beginning of the `body` tag, the theme's XML code is broken so it just shows a blank screen.
+
+Add these lines to your BrowserSync configuration and everything will start to work again.
+
+```js
+{
+	// Rest of your BrowserSync configuration....
+
+	snippetOptions: {
+		rule: {
+			match: /<\/body>/i,
+			fn: function(snippet, match) {
+				return snippet + match;
+			}
+		}
+	}
+}
+```
