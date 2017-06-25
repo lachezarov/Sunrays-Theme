@@ -14,7 +14,7 @@
 <body>
 <sort>
     <type><?= !empty($sort_data) ? str_replace('C=', '', $sort_data[0]) : '' ?></type>
-    <direction><?= !empty($sort_data) ? str_replace('O=', '', $sort_data[1]) : '' ?></direction>
+    <direction><?= count($sort_data) > 1 ? str_replace('O=', '', $sort_data[1]) : '' ?></direction>
 </sort>
 <search><?= $config['search']['enabled']; ?></search>
 <auto_drill_down><?= $config['autoDrillDown']; ?></auto_drill_down>
