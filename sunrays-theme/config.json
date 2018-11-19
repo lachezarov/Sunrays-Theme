@@ -1,9 +1,9 @@
 {
-	"theme" : "default",
-	"autoDrillDown" : "true",
-	"search" : {
-		"enabled" : "true",
-		"ignore" : [
+	"theme": "default",
+	"autoDrillDown": "true",
+	"search": {
+		"enabled": "true",
+		"ignore": [
 			"node_modules",
 			".bowerrc",
 			".git",
