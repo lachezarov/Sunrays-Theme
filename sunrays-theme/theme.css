@@ -256,13 +256,282 @@ a { color: #333; text-decoration: none; }
 
 .dark .result { color: #111; }
 
+
+/* Material Dark theme */
+.material-dark,
+.material-dark .item-size,
+.material-dark.no-touch .nav-sort .active a:hover { background: #212121; }
+
+.material-dark a,
+.material-dark.no-touch .nav-sort .active a:hover { color: #fff; }
+
+.material-dark .logo { filter: invert(100%); }
+
+.material-dark .items,
+.material-dark .nav-sort .dropdown,
+.material-dark .nav-sort .nav-trigger { background: #000;}
+
+.material-dark .nav-sort .nav-trigger { box-shadow: 0 1px 4px rgba(72, 72, 72, 0.75); }
+
+.material-dark .nav-sort .nav-trigger:before,
+.material-dark .nav-sort .nav-trigger:after { border-color: #fff; }
+
+.material-dark .item,
+.material-dark.no-touch .nav-sort .active a,
+.material-dark.no-touch .nav-sort .dropdown a:hover { background: #484848; }
+
+.material-dark.no-touch .item:hover,
+.material-dark .item:focus,
+.material-dark .item.focused { background: #fff; color: #212121; }
+
+.material-dark.no-touch .item:hover .item-size { background: #484848; }
+
+.material-dark .result { color: #212121; }
+
+/* Material Dark Theme Icons */
+.material-dark .item:before { filter: invert(100%); background-image: url(icons/md-file.svg); }
+.material-dark.no-touch .item:hover:before { filter: none; }
+
+.material-dark .item[href$="/"]:before { background-image: url(icons/md-folder.svg); }
+
+.material-dark .item.parent:before { background-image: url(icons/md-parent.svg); }
+
+.material-dark .item[href$=".zip"]:before,
+.material-dark .item[href$=".rar"]:before,
+.material-dark .item[href$=".tar"]:before,
+.material-dark .item[href$=".gz"]:before,
+.material-dark .item[href$=".gzip"]:before,
+.material-dark .item[href$=".7z"]:before,
+.material-dark .item[href$=".jar"]:before { background-image: url(icons/md-archive.svg); }
+
+.material-dark .item[href$=".aif"]:before,
+.material-dark .item[href$=".iff"]:before,
+.material-dark .item[href$=".m3u"]:before,
+.material-dark .item[href$=".m4a"]:before,
+.material-dark .item[href$=".mid"]:before,
+.material-dark .item[href$=".midi"]:before,
+.material-dark .item[href$=".mp3"]:before,
+.material-dark .item[href$=".mpa"]:before,
+.material-dark .item[href$=".ra"]:before,
+.material-dark .item[href$=".wav"]:before,
+.material-dark .item[href$=".wma"]:before,
+.material-dark .item[href$=".f4a"]:before,
+.material-dark .item[href$=".f4b"]:before,
+.material-dark .item[href$=".oga"]:before,
+.material-dark .item[href$=".ogg"]:before,
+.material-dark .item[href$=".kar"]:before { background-image: url(icons/md-audio.svg); }
+
+.material-dark .item[href$=".bin"]:before,
+.material-dark .item[href$=".c"]:before,
+.material-dark .item[href$=".deb"]:before,
+.material-dark .item[href$=".rpm"]:before { background-image: url(icons/md-bin.svg); }
+
+.material-dark .item[href$=".xlsx"]:before,
+.material-dark .item[href$=".xlsm"]:before,
+.material-dark .item[href$=".xltx"]:before,
+.material-dark .item[href$=".xltm"]:before,
+.material-dark .item[href$=".xlam"]:before,
+.material-dark .item[href$=".xlr"]:before,
+.material-dark .item[href$=".xls"]:before,
+.material-dark .item[href$=".csv"]:before { background-image: url(icons/md-xls.svg); }
+
+.material-dark .item[href$=".css"]:before,
+.material-dark .item[href$=".scss"]:before,
+.material-dark .item[href$=".sass"]:before,
+.material-dark .item[href$=".less"]:before,
+.material-dark .item[href$=".styl"]:before,
+.material-dark .item[href$=".pcss"]:before,
+.material-dark .item[href$=".postcss"]:before { background-image: url(icons/md-css.svg); }
+
+.material-dark .item[href$=".doc"]:before,
+.material-dark .item[href$=".docx"]:before,
+.material-dark .item[href$=".docm"]:before,
+.material-dark .item[href$=".dot"]:before,
+.material-dark .item[href$=".dotx"]:before,
+.material-dark .item[href$=".dotm"]:before,
+.material-dark .item[href$=".log"]:before,
+.material-dark .item[href$=".msg"]:before,
+.material-dark .item[href$=".odt"]:before,
+.material-dark .item[href$=".pages"]:before,
+.material-dark .item[href$=".rtf"]:before,
+.material-dark .item[href$=".tex"]:before,
+.material-dark .item[href$=".wpd"]:before,
+.material-dark .item[href$=".wps"]:before { background-image: url(icons/md-doc.svg); }
+
+.material-dark .item[href$=".svg"]:before,
+.material-dark .item[href$=".ico"]:before,
+.material-dark .item[href$=".gif"]:before,
+.material-dark .item[href$=".tif"]:before,
+.material-dark .item[href$=".tiff"]:before,
+.material-dark .item[href$=".png"]:before,
+.material-dark .item[href$=".bmp"]:before,
+.material-dark .item[href$=".wbmp"]:before,
+.material-dark .item[href$=".webp"]:before { background-image: url(icons/md-image.svg); }
+
+.material-dark .item[href$=".ai"]:before,
+.material-dark .item[href$=".eps"]:before { background-image: url(images/ai.svg); }
+
+.material-dark .item[href$=".html"]:before,
+.material-dark .item[href$=".xhtml"]:before,
+.material-dark .item[href$=".shtml"]:before,
+.material-dark .item[href$=".htm"]:before,
+.material-dark .item[href$=".dot"]:before,
+.material-dark .item[href$=".ejs"]:before,
+.material-dark .item[href$=".haml"]:before,
+.material-dark .item[href$=".handlebars"]:before,
+.material-dark .item[href$=".hbs"]:before,
+.material-dark .item[href$=".hbt"]:before,
+.material-dark .item[href$=".jade"]:before,
+.material-dark .item[href$=".latte"]:before,
+.material-dark .item[href$=".mustache"]:before,
+.material-dark .item[href$=".njk"]:before,
+.material-dark .item[href$=".tmpl"]:before,
+.material-dark .item[href$=".tpl"]:before,
+.material-dark .item[href$=".twig"]:before { background-image: url(icons/md-html.svg); }
+
+.material-dark .item[href$=".jpg"]:before,
+.material-dark .item[href$=".jpeg"]:before,
+.material-dark .item[href$=".JPG"]:before,
+.material-dark .item[href$=".JPEG"]:before,
+.material-dark .item[href$=".jp2"]:before { background-image: url(icons/md-jpg.svg); }
+
+.material-dark .item[href$=".js"]:before,
+.material-dark .item[href$=".jsx"]:before { background-image: url(icons/md-js.svg); }
+
+.material-dark .item[href$=".json"]:before,
+.material-dark .item[href$=".csslintrc"]:before,
+.material-dark .item[href$=".eslintrc"]:before,
+.material-dark .item[href$=".htmlhintrc"]:before,
+.material-dark .item[href$=".jscsrc"]:before,
+.material-dark .item[href$=".jshintrc"]:before,
+.material-dark .item[href$=".jshintignore"]:before,
+.material-dark .item[href$=".stylelintrc"]:before,
+.material-dark .item[href$=".prettierrc"]:before,
+.material-dark .item[href$=".babelrc"]:before,
+.material-dark .item[href$=".prettierignore"]:before,
+.material-dark .item[href$=".bowerrc"]:before,
+.material-dark .item[href$=".npmrc"]:before,
+.material-dark .item[href$=".browserslistrc"]:before,
+.material-dark .item[href$="browserslist"]:before { background-image: url(icons/md-json.svg); }
+
+.material-dark .item[href$=".txt"]:before,
+.material-dark .item[href$=".nfo"]:before,
+.material-dark .item[href$="AUTHORS"]:before,
+.material-dark .item[href$="CHANGELOG"]:before,
+.material-dark .item[href$="CHANGES"]:before,
+.material-dark .item[href$="CONTRIBUTING"]:before,
+.material-dark .item[href$="COPYING"]:before,
+.material-dark .item[href$="copyright"]:before,
+.material-dark .item[href$="COPYRIGHT"]:before,
+.material-dark .item[href$="*COPYRIGHT*"]:before,
+.material-dark .item[href$="INSTALL"]:before,
+.material-dark .item[href$="license"]:before,
+.material-dark .item[href$="LICENSE"]:before,
+.material-dark .item[href$="NEWS"]:before,
+.material-dark .item[href$="TODO"]:before,
+.material-dark .item[href$=".cnf"]:before,
+.material-dark .item[href$=".conf"]:before,
+.material-dark .item[href$=".config"]:before,
+.material-dark .item[href$=".editorconfig"]:before,
+.material-dark .item[href$=".gitattributes"]:before,
+.material-dark .item[href$=".gitignore"]:before,
+.material-dark .item[href$=".htaccess"]:before,
+.material-dark .item[href$=".npmignore"]:before,
+.material-dark .item[href$="Makefile"]:before,
+.material-dark .item[href$="makefile"]:before { background-image: url(icons/md-txt.svg); }
+
+.material-dark .item[href$=".pkg"]:before,
+.material-dark .item[href$=".dmg"]:before,
+.material-dark .item[href$=".iso"]:before,
+.material-dark .item[href$=".exe"]:before,
+.material-dark .item[href$=".pyc"]:before,
+.material-dark .item[href$=".apk"]:before { background-image: url(icons/md-dmg.svg); }
+
+.material-dark .item[href$=".pdf"]:before { background-image: url(icons/md-pdf.svg); }
+
+.material-dark .item[href$=".php"]:before,
+.material-dark .item[href$=".phtml"]:before { background-image: url(icons/md-php.svg); }
+
+.material-dark .item[href$=".ps"]:before,
+.material-dark .item[href$=".psd"]:before,
+.material-dark .item[href$=".psb"]:before { background-image: url(icons/md-psd.svg); }
+
+.material-dark .item[href$=".rss"]:before { background-image: url(icons/md-rss.svg); }
+
+.material-dark .item[href$=".sql"]:before { background-image: url(icons/md-sql.svg); }
+
+.material-dark .item[href$=".asf"]:before,
+.material-dark .item[href$=".asx"]:before,
+.material-dark .item[href$=".avi"]:before,
+.material-dark .item[href$=".flv"]:before,
+.material-dark .item[href$=".mkv"]:before,
+.material-dark .item[href$=".mov"]:before,
+.material-dark .item[href$=".mp4"]:before,
+.material-dark .item[href$=".mpg"]:before,
+.material-dark .item[href$=".rm"]:before,
+.material-dark .item[href$=".srt"]:before,
+.material-dark .item[href$=".swc"]:before,
+.material-dark .item[href$=".swf"]:before,
+.material-dark .item[href$=".vob"]:before,
+.material-dark .item[href$=".wmv"]:before,
+.material-dark .item[href$=".m4v"]:before,
+.material-dark .item[href$=".f4v"]:before,
+.material-dark .item[href$=".f4p"]:before,
+.material-dark .item[href$=".ogv"]:before,
+.material-dark .item[href$=".3gp"]:before,
+.material-dark .item[href$=".3gpp"]:before,
+.material-dark .item[href$=".as"]:before,
+.material-dark .item[href$=".fla"]:before,
+.material-dark .item[href$=".mng"]:before,
+.material-dark .item[href$=".webm"]:before { background-image: url(icons/md-video.svg); }
+
+.material-dark .item[href$=".xml"]:before,
+.material-dark .item[href$=".xsl"]:before { background-image: url(icons/md-xml.svg); }
+
+.material-dark .item[href$=".bat"]:before {background-image: url(icons/md-windows.svg); }
+.material-dark .item[href$=".coffee"]:before {background-image: url(icons/md-coffee.svg); }
+
+.material-dark .item[href$=".ts"]:before,
+.material-dark .item[href$=".tsx"]:before { background-image: url(icons/md-ts.svg); }
+
+.material-dark .item[href$=".py"]:before { background-image: url(icons/md-python.svg); }
+
+.material-dark .item[href$=".rb"]:before { background-image: url(icons/md-ror.svg); }
+
+.material-dark .item[href$=".yml"]:before,
+.material-dark .item[href$=".yaml"]:before { background-image: url(icons/md-yml.svg); }
+
+.material-dark .item[href$=".sh"]:before { background-image: url(icons/md-console.svg); }
+
+.material-dark .item[href$=".markdown"]:before,
+.material-dark .item[href$=".md"]:before,
+.material-dark .item[href$=".mdwn"]:before,
+.material-dark .item[href$=".mdown"]:before,
+.material-dark .item[href$=".mkd"]:before,
+.material-dark .item[href$=".mkdn"]:before,
+.material-dark .item[href$=".mdtxt"]:before,
+.material-dark .item[href$=".mdtext"]:before,
+.material-dark .item[href$=".readme"]:before,
+.material-dark .item[href$=".README"]:before,
+.material-dark .item[href$="*README*"]:before { background-image: url(icons/md-markdown.svg); }
+
+.material-dark .item[href$=".eot"]:before,
+.material-dark .item[href$=".ttf"]:before,
+.material-dark .item[href$=".otf"]:before,
+.material-dark .item[href$=".woff"]:before,
+.material-dark .item[href$=".woff2"]:before { background-image: url(icons/md-font.svg); }
+
+.material-dark .item[href$="Dockerfile"]:before,
+.material-dark .item[href$="dockerfile"]:before,
+.material-dark .item[href$=".dockerignore"]:before { background-image: url(icons/md-docker.svg); }
+
 /*  Responsive  */
 @media (min-width: 480px) {
 	.item { padding: 0 0 0 40px; min-height: 36px; }
 	.item:before { top: 8px; }
 
 	.item-name { width: 60%; line-height: 2.6; }
-	
+
 	.no-flex .item { overflow: hidden; }
 	.no-flex .item-name { float: left; }
 
